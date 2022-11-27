@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{faacf6f4-51fb-403e-8531-953ae53d8a85}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Login</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DB.h" />
+    <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarAlimentos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarAnimales.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarArea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarComida.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarEspecie.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarHabitad.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarLicencia.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarMantenimiento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarRevision.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarRol.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAgregarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAlimentoshs.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAnimales.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormAreas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormComidas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormCrearUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarAnimal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarArea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarComida.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarEspecie.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarHabitat.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarHorario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarLicencia.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarMantenimiento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarRevision.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarRol.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEditarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormEspecies.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormHabitads.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormLicencias.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoAnimales.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoArea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoComidas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoEspecies.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoHabitads.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoHorarioAnimales.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoLicencias.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoMantenimientos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoRevisiones.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoRol.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormListadoUsuarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormMantenimientos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormRevisiones.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormRol.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FormUsuarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="CppCLR_WinFormsProject.cpp" />
+    <ClCompile Include="DB.cpp" />
+    <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="FormAgregarAlimentos.cpp" />
+    <ClCompile Include="FormAgregarAnimales.cpp" />
+    <ClCompile Include="FormAgregarArea.cpp" />
+    <ClCompile Include="FormAgregarComida.cpp" />
+    <ClCompile Include="FormAgregarEspecie.cpp" />
+    <ClCompile Include="FormAgregarHabitad.cpp" />
+    <ClCompile Include="FormAgregarLicencia.cpp" />
+    <ClCompile Include="FormAgregarMantenimiento.cpp" />
+    <ClCompile Include="FormAgregarRevision.cpp" />
+    <ClCompile Include="FormAgregarRol.cpp" />
+    <ClCompile Include="FormAgregarUsuario.cpp" />
+    <ClCompile Include="FormAlimentoshs.cpp" />
+    <ClCompile Include="FormAnimales.cpp" />
+    <ClCompile Include="FormAreas.cpp" />
+    <ClCompile Include="FormComidas.cpp" />
+    <ClCompile Include="FormCrearUsuario.cpp" />
+    <ClCompile Include="FormEditarAnimal.cpp" />
+    <ClCompile Include="FormEditarArea.cpp" />
+    <ClCompile Include="FormEditarComida.cpp" />
+    <ClCompile Include="FormEditarEspecie.cpp" />
+    <ClCompile Include="FormEditarHabitat.cpp" />
+    <ClCompile Include="FormEditarHorario.cpp" />
+    <ClCompile Include="FormEditarLicencia.cpp" />
+    <ClCompile Include="FormEditarMantenimiento.cpp" />
+    <ClCompile Include="FormEditarRevision.cpp" />
+    <ClCompile Include="FormEditarRol.cpp" />
+    <ClCompile Include="FormEditarUsuario.cpp" />
+    <ClCompile Include="FormEspecies.cpp" />
+    <ClCompile Include="FormHabitads.cpp" />
+    <ClCompile Include="FormLicencias.cpp" />
+    <ClCompile Include="FormListadoAnimales.cpp" />
+    <ClCompile Include="FormListadoArea.cpp" />
+    <ClCompile Include="FormListadoComidas.cpp" />
+    <ClCompile Include="FormListadoEspecies.cpp" />
+    <ClCompile Include="FormListadoHabitads.cpp" />
+    <ClCompile Include="FormListadoHorarioAnimales.cpp" />
+    <ClCompile Include="FormListadoLicencias.cpp" />
+    <ClCompile Include="FormListadoMantenimientos.cpp" />
+    <ClCompile Include="FormListadoRevisiones.cpp" />
+    <ClCompile Include="FormListadoRol.cpp" />
+    <ClCompile Include="FormListadoUsuarios.cpp" />
+    <ClCompile Include="FormMantenimientos.cpp" />
+    <ClCompile Include="FormRevisiones.cpp" />
+    <ClCompile Include="FormRol.cpp" />
+    <ClCompile Include="FormUsuarios.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarAlimentos.resx">
+      <DependentUpon>FormAgregarAlimentos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarAnimales.resx">
+      <DependentUpon>FormAgregarAnimales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarArea.resx">
+      <DependentUpon>FormAgregarArea.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarComida.resx">
+      <DependentUpon>FormAgregarComida.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarEspecie.resx">
+      <DependentUpon>FormAgregarEspecie.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarHabitad.resx">
+      <DependentUpon>FormAgregarHabitad.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarLicencia.resx">
+      <DependentUpon>FormAgregarLicencia.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarMantenimiento.resx">
+      <DependentUpon>FormAgregarMantenimiento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarRevision.resx">
+      <DependentUpon>FormAgregarRevision.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarRol.resx">
+      <DependentUpon>FormAgregarRol.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarUsuario.resx">
+      <DependentUpon>FormAgregarUsuario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlimentoshs.resx">
+      <DependentUpon>FormAlimentoshs.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnimales.resx">
+      <DependentUpon>FormAnimales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAreas.resx">
+      <DependentUpon>FormAreas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComidas.resx">
+      <DependentUpon>FormComidas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearUsuario.resx">
+      <DependentUpon>FormCrearUsuario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarAnimal.resx">
+      <DependentUpon>FormEditarAnimal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarArea.resx">
+      <DependentUpon>FormEditarArea.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarComida.resx">
+      <DependentUpon>FormEditarComida.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarEspecie.resx">
+      <DependentUpon>FormEditarEspecie.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarHabitat.resx">
+      <DependentUpon>FormEditarHabitat.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarHorario.resx">
+      <DependentUpon>FormEditarHorario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarLicencia.resx">
+      <DependentUpon>FormEditarLicencia.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarMantenimiento.resx">
+      <DependentUpon>FormEditarMantenimiento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarRevision.resx">
+      <DependentUpon>FormEditarRevision.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarRol.resx">
+      <DependentUpon>FormEditarRol.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarUsuario.resx">
+      <DependentUpon>FormEditarUsuario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEspecies.resx">
+      <DependentUpon>FormEspecies.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHabitads.resx">
+      <DependentUpon>FormHabitads.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLicencias.resx">
+      <DependentUpon>FormLicencias.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoAnimales.resx">
+      <DependentUpon>FormListadoAnimales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoArea.resx">
+      <DependentUpon>FormListadoArea.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoComidas.resx">
+      <DependentUpon>FormListadoComidas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoEspecies.resx">
+      <DependentUpon>FormListadoEspecies.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoHabitads.resx">
+      <DependentUpon>FormListadoHabitads.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoHorarioAnimales.resx">
+      <DependentUpon>FormListadoHorarioAnimales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoLicencias.resx">
+      <DependentUpon>FormListadoLicencias.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoMantenimientos.resx">
+      <DependentUpon>FormListadoMantenimientos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoRevisiones.resx">
+      <DependentUpon>FormListadoRevisiones.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoRol.resx">
+      <DependentUpon>FormListadoRol.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoUsuarios.resx">
+      <DependentUpon>FormListadoUsuarios.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantenimientos.resx">
+      <DependentUpon>FormMantenimientos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRevisiones.resx">
+      <DependentUpon>FormRevisiones.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRol.resx">
+      <DependentUpon>FormRol.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
